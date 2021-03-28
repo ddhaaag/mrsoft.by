@@ -4,10 +4,11 @@ const btnSearchByString =  document.querySelector('.btnByString');
 let dataFromServer = {};
 
 // получение json
+
 let request = new XMLHttpRequest();
 
-request.open('GET', 'data.json');
-request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+request.open('GET', 'https://mycorsproxy-vital.herokuapp.com/https://www.mrsoft.by/data.json');
+request.setRequestHeader('Content-type', 'application/json');
 
 request.send();
 
